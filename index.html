@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>谢金锦 在线简历</title>
+</head>
+
+<body>
+  <h1>谢金锦</h1>
+  <p>学历: 硕士 计算机科学与技术 重庆邮电大学</p>
+  <p>意向: Go 服务端开发</p>
+
+  <h2>基本信息</h2>
+  <p>联系电话: 15723001753</p>
+  <p>电子邮箱: i@xjj.pub</p>
+  <p>个人博客: <a href="https://xjj.pub">https://xjj.pub</a></p>
+  <p>GitHub: <a href="https://github.com/mivinci">https://github.com/mivinci</a></p>
+
+  <h2>实习经历</h2>
+  <strong>腾讯 Web 开发 2020.4 - 2020.5</strong>
+  <p>基于 SocketIO 的日志收集平台。主要负责: 部分后端接口和几个前端组件的实现。</p>
+
+  <h2>知识/技能</h2>
+  <ul>
+    <li>熟悉计算机组成原理、汇编语言、编译原理、计算机网络。</li>
+    <li>熟悉主流编程语言的原理, 和部分机器的指令集架构。</li>
+    <li>熟悉微服务框架 micro/go-micro, rpcx, kratos 的原理和源码。</li>
+    <li>熟悉 gRPC 和 protobuf 的原理和实现。</li>
+    <li>熟悉主流 Go Web 框架的原理和实现。</li>
+    <li>熟悉 Redis 的原理和实现。</li>
+    <li>熟悉 Lua 虚拟机的原理和实现。</li>
+    <li>熟悉 Git, Linux 环境开发，了解部分 Linux 内核原理。</li>
+    <li>熟悉 Kubernetes 和 k3s 的原理和部分实现。</li>
+    <li>熟悉容器技术的原理和部分实现。</li>
+    <li>熟悉 Web 前端技术和生态。熟悉 h5、小程序开发。</li>
+  </ul>
+
+  <h2>其他属性</h2>
+  <ul>
+    <li>大学英语 6 级, 且口语较好, 英文阅读书写能力与中文无异。</li>
+    <li>热爱开源, 喜欢研究各种技术和源码。</li>
+  </ul>
+
+  <h2>个人项目</h2>
+  <strong>用于深度学习模型落地的集群</strong>
+  <p>
+    简化了 k8s 的架构, 将其适用于深度学习模型的部署和管理。群集由主节点和工作节点构成, 
+    工作节点由 proxy, runtime, tunnel, conda, cuda, store 组成, proxy 负责模型的反向代理和负载均衡, 
+    runtime 操作 conda, cuda 部署模型, store 存储模型文件。主节点由 api server, tunnel, registry, scheduler, auth 组成,
+    api server 给外界提供 HTTP 接口, registry 维护模型注册、发现, scheduler 负责调度工作节点, auth 实现基于规则的访问控制。
+    主节点和工作节点通过 tunnel 进行通信。管理员通过 CLI 或 dashboard 控制集群, 用户通过不同语言的 SDK 或 WebUI 调用模型。
+    (技术点: Go, Python, gRPC, WebSocket, tunnel proxy, 负载均衡, 分布式)
+  </p>
+
+  <strong>用于科学计算的静态类型编程语言 X</strong>
+  <p> Coding...</p>
+  
+</body>
+
+</html>
