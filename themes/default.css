@@ -1,0 +1,30 @@
+:root {
+  --maxw: 680px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: var(--maxw);
+  margin: auto;
+}
+
+@media (max-width: 680px) {
+  body {
+    padding: 1em;
+  }
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #107492;
+}
+
+
+.py-2 {
+  padding: .2em 0;
+}
