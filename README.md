@@ -1,3 +1,4 @@
-Resume
+# Resume
 
-Hire [me](https://resume.xjj.pub).
+https://resume.xjj.pub
+
