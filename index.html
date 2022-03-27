@@ -32,7 +32,7 @@
     <li><p>熟悉主流 Go Web 框架原理, 实现过性能与 httprouter 相当的路由器。</p></li>
     <li><p>熟悉 Redis, Lua 虚拟机的原理和实现。</p></li>
     <li><p>熟悉 Git, Linux 开发环境，了解部分 Linux 内核原理。</p></li>
-    <li><p>熟悉 Kubernetes, k3s, 了解容器技术。</p></li>
+    <li><p>熟悉 Kubernetes, k3s 环境, 了解容器技术。</p></li>
     <li><p>熟悉 Web 前端技术和生态，有 h5、小程序开发经验。</p></li>
   </ul>
 
@@ -45,7 +45,7 @@
   <h2>个人项目</h2>
   <strong>用于深度学习模型落地的集群</strong>
   <p>
-    简化了 k8s 的架构, 将其适用于深度学习模型的部署和管理。群集由主节点和工作节点构成, 
+    简化 k8s 的架构, 将其适用于深度学习模型的部署和管理。群集由主节点和工作节点构成, 
     工作节点由 proxy, runtime, tunnel, conda, cuda, store 组成, proxy 负责模型的反向代理和负载均衡, 
     runtime 操作 conda, cuda 部署模型, store 存储模型文件。主节点由 api server, tunnel, registry, scheduler, auth 组成,
     api server 给外界提供 HTTP 接口, registry 维护模型注册、发现, scheduler 负责调度工作节点, auth 实现基于规则的访问控制。
