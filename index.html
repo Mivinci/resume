@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./themes/default.css">
-  <title>谢金锦 - 在线简历</title>
+  <title>XJJ - 在线简历</title>
 </head>
 
 <body>
@@ -22,41 +22,37 @@
 
   <h2>实习经历</h2>
   <strong>腾讯 Web 开发 2020.4 - 2020.5</strong>
-  <p>日志收集平台。主要负责: 部分后端接口和几个前端组件的实现。</p>
+  <p>日志收集平台。主要负责: 部分后端接口和几个网页组件。</p>
 
   <h2>知识/技能</h2>
   <ul>
-    <li><p>熟悉计算机组成原理、汇编、编译原理、计算机网络、数据结构和基本算法。</p></li>
-    <li><p>熟悉 Go, Python, C, NodeJS, 了解主流编程语言的原理和部分机器的指令集架构</p></li>
-    <li><p>熟悉微服务框架 micro/go-micro, rpcx, kratos 的原理和源码。</p></li>
-    <li><p>熟悉主流 Go Web 框架原理, 实现过性能与 httprouter 相当的路由器。</p></li>
-    <li><p>熟悉 Redis, Lua 虚拟机的原理和实现。</p></li>
-    <li><p>熟悉 Git, Linux 开发环境，了解部分 Linux 内核原理。</p></li>
+    <li><p>熟悉计算机组成原理、编译原理、计算机网络、数据结构和基本算法。</p></li>
+    <li><p>熟悉 Go, Python, C, NodeJS, 了解主流编程语言的原理和部分指令集架构</p></li>
+    <li><p>熟悉微服务框架 micro/go-micro, rpcx, kratos 的原理。</p></li>
+    <li><p>熟悉主流 Go Web 框架原理, 实现过性能与 httprouter 相当的 multiplexer。</p></li>
+    <li><p>熟悉 Redis, Lua 虚拟机的原理。</p></li>
+    <li><p>熟练 Git, Linux 操作，了解部分 Linux 内核原理。</p></li>
     <li><p>熟悉 Kubernetes, k3s 环境, 了解容器技术。</p></li>
-    <li><p>熟悉 Web 前端技术和生态，有 h5、小程序开发经验。</p></li>
+    <li><p>熟悉 Web 前端技术和生态，有 h5、小程序开发/实习经验。</p></li>
   </ul>
 
   <h2>其他属性</h2>
   <ul>
-    <li><p>大学英语 6 级, 且口语较好, 英文阅读书写能力与中文无异。</p></li>
-    <li><p>热爱开源, 喜欢研究技术的实现。</p></li>
+    <li><p>大学英语 6 级, 口语较好, 英文自然拼读写。</p></li>
+    <li><p>热爱开源, 喜欢研究技术。</p></li>
   </ul>
 
   <h2>个人项目</h2>
-  <strong>用于深度学习模型落地的集群</strong>
-  <p>
-    简化 k8s 的架构, 将其适用于深度学习模型的部署和管理。群集由主节点和工作节点构成, 
-    工作节点由 proxy, runtime, tunnel, conda, cuda, store 组成, proxy 负责模型的反向代理和负载均衡, 
-    runtime 操作 conda, cuda 部署模型, store 存储模型文件。主节点由 api server, tunnel, registry, scheduler, auth 组成,
-    api server 给外界提供 HTTP 接口, registry 维护模型注册、发现, scheduler 负责调度工作节点, auth 实现基于规则的访问控制。
-    主节点和工作节点通过 tunnel 进行通信。管理员通过 CLI 或 dashboard 控制集群, 用户通过不同语言的 SDK 或 WebUI 调用模型。
-    <strong>技术点:</strong> Go, Python, gRPC, WebSocket, tunnel proxy, 负载均衡, 分布式
+  <strong>多模型落地引擎 Sermo</strong>
+  <p> 负责前后端和引擎的开发、文档的书写。
+    <strong>引擎</strong>：一个模型对应一个或多个可伸缩的 worker，
+    引擎和模型使用 unix domain socket 做 IPC 通信，通信协议基于 TLV 封装，
+    引擎利用 gRPC 和客户端通信，客户端有在线 Web 平台、CLI、和不同语言封装的 SDK。
+    模型调用采用 pipeline 模式通过协调器自动将多个 input 封装成 batch 来实现。
+    <strong>前后端</strong>：常规的用户、模型、token 管理。
   </p>
 
   <div class="py-2"></div>
-
-  <strong>用于科学计算的静态类型编程语言 X</strong>
-  <p> Coding...</p>
   
 </body>
 
